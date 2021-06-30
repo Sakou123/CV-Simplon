@@ -1,18 +1,17 @@
 @font-face {
     font-family: Castoro;
-    src: url(../Police/Castoro-Regular.ttf);
+    src: url(../Police/Castoro-Regular.ttf);                    /* Setup Police Local */
 }
-
+                                                                /* MOBILE FIRST */
 *{
     font-family: Castoro;
 }
-
 body{
     text-align: center;
     margin: 0 auto;
 }
 .dark-mode{
-    background-color: black;
+    background-color: black;                                    /*Darkmode*/
     color: white;
 }
 header{
@@ -20,51 +19,43 @@ header{
     padding:1px 0 10px 0;
     margin: 0 auto;
 }
-
 h1{
     text-decoration: underline;
     margin-top: 8%;
-}
-
+}                                                            /* Decoration des H1 et H2 */
 h2{
     text-decoration: underline;
     margin: 15px 0 10px 0;
 }
-
 .nomarg{
     margin: 0 auto;
 }
-
 .green{
-    color: #018502;
+    color: #018502;                                       /* Setup couleur verte */
     font-weight: bold;
 }
-
 .ulflex{
     text-align:center;
 }
-
 ul{
     list-style: none;
     padding: 0;
 }
-
 .dot::before {
     content: "•"; color: #018502;
-    display: inline-block; width: 1em;
-    margin-left: -1em
+    display: inline-block; width: 1em;                      /* Changement de la couleur des dots sur le  */
+    margin-left: -1em                                       /* UL du bloc COMPETENCES  */   
     
 }
 .mise{
-    text-align: left;
-    margin: 0 auto;
+    text-align: left;                                       /* Marge de 5% sur le coté gauche pour tout le  */
+    margin: 0 auto;                                         /* reste de la page en dessous de COMPETENCES  */
     margin-left: 5%;
 }
-
 #button{
     width: 100%;
     height: 30px;
-    background-color: rgba(1, 140, 1, 0.8);
+    background-color: rgba(1, 140, 1, 0.8);               /* Visuel pour le bouton du DarkMode */
     border-radius: 0 0 10px 10px;
     line-height: 30px;
     color: black;
@@ -73,79 +64,63 @@ ul{
     top:0px;
     z-index:1;
 }
-
-
-/* PASSAGE MOBILE --> TABLETTE(640px) */
-
+                                                            /* PASSAGE MOBILE --> TABLETTE(640px) */
 @media screen and (min-width:640px){
     
     body{
         background: url(../IMG/Backgroundtab.jpg) center/cover;
         color: black;
     }
-    
     .mise{
         margin-left: 5%;
         padding-left: 5%;
-        border-left: dotted 2px #018502 ;*
+        border-left: dotted 2px #018502 ;
     }
-       /* COMPÉTENCES */
-
+                                                            /* Passage de COMPÉTENCES en 2 collone a partir */
+                                                            /* a partir du mode tablette */
    .ulflex{
         display: flex;
         margin: 0 auto;
         
     }
-
     .ul1, .ul2{
         width: 50%;
         text-align: center;
     }
-
     .dark-mode{
         background: black;
         color: white;
     }
-}  
-
-/* PASSAGE TABLETTE --> ORDINATEUR(1280px) */
-
+}
+                                                            /* PASSAGE TABLETTE --> ORDINATEUR(1280px) */
 @media screen and (min-width:1280px){
     html{
-        background:url("../IMG/Non.jpg");
+        background:url("../IMG/Non.jpg");                   /* Setup du background sur le mode PC */
         background-size: 100% 100%; 
     }
-
     body{
         background: white;
         color: black;
-        margin: 0 auto;
         width: 50%;
-        border-left: solid 2px #018502;
-        border-right: solid 2px #018502;
+        border-left: solid 2px #018502;                  /* Setup des barres laterale du body pour faire */
+        border-right: solid 2px #018502;                 /* la separation avec le background */
         background-color:white;
-        opacity: 80%;
-    }
-    
+        opacity: 80%;                                      /* Opacité reduite pour voir le background sans que */
+    }                                                      /* sa ne devienne illisible */
     footer{
         padding: 2.1% 0 2.1% 0;
     }
-
     header{
-        background: url("../IMG/CODE_DOPALE.png")no-repeat;
+        background: url("../IMG/CODE_DOPALE.png")no-repeat; /* Setup et placement du logo "Code D'Opale" */
         background-size: 10% 50%; 
-        background-position:left 5% top 35px;        
+        background-position:left 10% top 50px;        
     }
-    #button{
-        width: 50%;
+    #button{                                                /* Placement du bouton darkmode pour qu'il reste */
+        width: 50%;                                         /* dans le body donc la "page" blanche */
         left: 25%;
         cursor: pointer;
     }
-
-    h1{
-        margin-top: 4%;
+    h1{                                                     /* Petite marge pour faire de la place au bouton */
+        margin-top: 4%;                                     /* car ils étaient superposé */
     }
-
-    
-   
 }
