@@ -11,8 +11,8 @@ body{
     margin: 0 auto;
 }
 .dark-mode{
-    background-color: black;                                    /*Darkmode*/
-    color: white;
+    background-color: #555555;                                    /*Darkmode*/
+    color: rgb(233, 233, 233);
 }
 header{
     border-bottom: solid gray 2px;
@@ -88,8 +88,8 @@ ul{
         text-align: center;
     }
     .dark-mode{
-        background: black;
-        color: white;
+        background: #555555;
+        color: rgb(233, 233, 233);
     }
 }
                                                             /* PASSAGE TABLETTE --> ORDINATEUR(1280px) */
@@ -122,5 +122,9 @@ ul{
     }
     h1{                                                     /* Petite marge pour faire de la place au bouton */
         margin-top: 4%;                                     /* car ils étaient superposé */
+    }
+    .dark-mode{
+        background-color: #191919;
+        color: white;
     }
 }
