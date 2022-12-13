@@ -4,11 +4,11 @@ function Button() {
   element.classList.toggle("dark-mode");
   
   if (element.classList.contains("dark-mode")){         /* Check si le body est en darkmode pour */
-    let msg = "On rallume plutôt ?";                    /* <-- changer le texte du bouton */
+    let msg = "Mode Clair";                    /* <-- changer le texte du bouton */
     button.innerHTML = msg;
   }
   else{
-    let msg = "On éteint la lumière ?";
+    let msg = "Mode Sombre";
     button.innerHTML = msg;
   }
 }
